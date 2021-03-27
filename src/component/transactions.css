@@ -1,0 +1,89 @@
+.transactions{
+    padding: 20px 0 0 0;
+}
+
+.scroll{
+    min-height: 160px;
+    max-height: 180px;
+    overflow-y: scroll;
+    padding: 0 5px 0 0;
+}
+
+.scroll::-webkit-scrollbar{
+    width: 5px;
+}
+
+.scroll::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.history{
+    font-weight: 700;
+    font-size: 15px;
+    color: rgb(34, 33, 33);
+    margin: 0 0 5px 0;
+}
+
+.transactions-list{
+    padding: 10px 0;
+}
+
+.income-transaction{
+    padding: 5px;
+    border-left: solid 5px green;
+    display: flex;
+    box-shadow: 0 0 10px 1px rgb(211, 211, 211);
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    position: relative;
+    transition: all 0.5s linear;
+}
+
+.expense-transaction{
+    padding: 5px;
+    border-left: solid 5px red;
+    display: flex;
+    box-shadow: 0 0 10px 1px rgb(211, 211, 211);
+    background-color: white;
+    margin-bottom: 10px;
+    position: relative;
+    transition: all 0.5s linear;
+}
+
+.deleteBtn{
+    background-color: red;
+    padding: 0 5px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    visibility: hidden;
+}
+
+.income-transaction:hover > .deleteBtn, .expense-transaction:hover > .deleteBtn{
+    visibility: visible;
+}
+
+.income-transaction p, .expense-transaction p{
+    color: rgb(100, 99, 99);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 400px){
+    .income-transaction{
+        padding: 10px 5px;
+    }
+    
+    .expense-transaction{
+        padding: 10px 5px;
+    } 
+    .scroll{
+        min-height: 200px;
+        max-height: 220px;
+        overflow-y: scroll;
+    }
+}

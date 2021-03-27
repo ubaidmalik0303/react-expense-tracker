@@ -1,0 +1,37 @@
+.addTransaction h4{
+    font-size: 15px;
+    color: rgb(34, 33, 33);
+}
+
+.line-break{
+    margin: 5px 0;
+}
+
+.title{
+    color: rgb(66, 66, 66);
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.title-input{
+    width: 100%;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px 1px rgb(211, 211, 211);
+    height: 30px;
+    margin-top: 5px;
+    padding: 0 5px;
+}
+
+.addTransactionButton{
+    background-color: rgb(152, 86, 228);
+    border: none;
+    outline: none;
+    width: 100%;
+    color: white;
+    padding: 10px 0;
+    margin: 10px 0;
+    font-weight: 600;
+    cursor: pointer;
+}
